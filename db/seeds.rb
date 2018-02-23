@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+harshal = Author.create! name: "Harshal"
+deep = Author.create! name: "Deep"
+
+article_1 = Article.create! name: "Article 1", author_id: harshal.id
+article_2 = Article.create! name: "Article 2", author_id: harshal.id
+article_3 = Article.create! name: "Article 3", author_id: deep.id
